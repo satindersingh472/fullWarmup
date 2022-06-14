@@ -1,27 +1,3 @@
-@-webkit-keyframes myAnimation {
-  50% {
-    font-size: 15px;
-    padding: 10px;
-    color: gray;
-  }
-  100% {
-    font-size: 30px;
-    padding: 40px;
-    color: black;
-  }
-}
-@keyframes myAnimation {
-  50% {
-    font-size: 15px;
-    padding: 10px;
-    color: gray;
-  }
-  100% {
-    font-size: 30px;
-    padding: 40px;
-    color: black;
-  }
-}
 * {
   padding: 0;
   margin: 0;
@@ -46,10 +22,11 @@ img {
   place-items: center;
 }
 #navbar #logo {
-  justify-self: start;
   padding: 20px;
 }
 #navbar #pages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-self: center;
   text-align: center;
 }
@@ -58,10 +35,12 @@ img {
   text-decoration: none;
   padding: 10px;
   color: orange;
+  transition: all 0.001s ease-in-out;
 }
 #navbar #pages a:hover {
-  -webkit-animation: myAnimation 0.9s ease-in-out;
-          animation: myAnimation 0.9s ease-in-out;
+  font-size: 30px;
+  padding: 30px;
+  color: black;
 }
 #navbar img {
   height: 40px;
@@ -113,6 +92,7 @@ footer {
 
   #navbar {
     margin: 30px;
+    grid-template-columns: 1fr 1fr;
   }
 
   main {
