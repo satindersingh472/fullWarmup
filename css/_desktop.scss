@@ -2,10 +2,15 @@
     body {
         max-width: 1080px;
         gap: 2px;
+        margin: 0 auto;
     }
 
     #navbar{
         margin: 30px;
+        #logo{
+            
+        }
+
     }
     main {
         display: grid;

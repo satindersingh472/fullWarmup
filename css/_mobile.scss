@@ -1,56 +1,102 @@
-*{
+@keyframes myAnimation {
+    50% {
+        font-size: 15px;
+        padding: 10px;
+        color: gray;
+
+    }
+
+    100% {
+        font-size: 30px;
+        padding: 40px;
+        color: black;
+    }
+}
+
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     width: 100%;
     display: grid;
     font-family: monospace;
 
 }
-img{
+
+img {
     height: 300px;
     width: 100%;
     object-fit: cover;
 }
-#navbar{
+
+#navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    img{
+
+    #logo {
+        justify-self: start;
+        padding: 20px;
+    }
+
+    #pages {
+        justify-self: center;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            color: orange;
+
+            &:hover {
+                animation: myAnimation .9s ease-in-out;
+            }
+        }
+    }
+
+    img {
         height: 40px;
         width: 40px;
     }
 }
-.text{
+
+.text {
     display: grid;
     place-items: center;
     text-align: center;
     margin: 10px;
-    .inner_text_rows{
+
+    .inner_text_rows {
         margin: 10px;
-        h2,p{
+
+        h2,
+        p {
             color: gray;
             margin: 10px;
             line-height: 1.5;
         }
     }
-    button{
+
+    button {
         padding: 7px;
         margin: 10px;
         border-radius: 10px;
         background-color: orange;
     }
 }
-.image{
+
+.image {
     padding: 50px;
     background-color: orange;
 }
-footer{
+
+footer {
     display: grid;
     background-color: slategray;
     min-height: 20vh;
     text-align: center;
     align-items: center;
-    color:whitesmoke;
+    color: whitesmoke;
 }
