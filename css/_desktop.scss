@@ -1,0 +1,15 @@
+@media only screen and (min-width:600px) {
+    body {
+        max-width: 1080px;
+        gap: 2px;
+    }
+
+    #navbar{
+        margin: 30px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
