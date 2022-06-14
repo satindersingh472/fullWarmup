@@ -33,7 +33,7 @@ img {
 
 #navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     place-items: center;
 
     #logo {
@@ -46,6 +46,7 @@ img {
         text-align: center;
 
         a {
+            display: grid;
             text-decoration: none;
             padding: 10px;
             color: orange;
